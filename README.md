@@ -2,6 +2,7 @@
 #  workspace by using catkin_make
 ## installed catkin
 * $ source /opt/ros/melodic/setup.bash
+
 ## create catkin workspace:
 * $ mkdir -p ~/catkin_ws/src
 * $ cd ~/catkin_ws/ 
