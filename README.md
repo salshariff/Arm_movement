@@ -52,7 +52,7 @@
 * $ roslaunch moveit_pkg demo.launch
 ## in other terminal
 * $ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
-* ![](images/Screenshot from 2021-06-30 04-31-08.png)
+* ![](images/Screenshot%20from 2021-06-30 04-31-08.png)
 
 
   
