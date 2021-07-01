@@ -20,7 +20,7 @@ installed catkin
  $ sudo apt install git
  $ git clone https://github.com/smart-methods/arduino_robot_arm
 ```
-#### Install all the dependencies
+### Install all the dependencies
 ```
  $ cd ~/catkin_ws
  $ rosdep install --from-paths src --ignore-src -r -y
