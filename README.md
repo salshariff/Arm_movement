@@ -1,26 +1,13 @@
-**Arm_movement**
-#  workspace by using catkin_make
-installed catkin
+# install-arm-package..
 
- ```$ source /opt/ros/melodic/setup.bash```
+To install the arm package, go to src and install git, then install the arm package
 
-### create catkin workspace:
-```
- $ mkdir -p ~/catkin_ws/src
- $ cd ~/catkin_ws/ 
- $ catkin_make
-```
-* _To make it easier to use the code_
-
- ```$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc $ source ~/.bashrc```
-
-### Add the “arduino_robot_arm” package to “src” folder
 ```
  $ cd ~/catkin_ws/src
  $ sudo apt install git
  $ git clone https://github.com/smart-methods/arduino_robot_arm
 ```
-### Install all the dependencies
+### Install the dependencies
 ```
  $ cd ~/catkin_ws
  $ rosdep install --from-paths src --ignore-src -r -y
@@ -29,11 +16,17 @@ installed catkin
  $ sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher
  $ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
 ```
-### To collect packages
+### To compile packages
  ```$ catkin_make```
  
+ After the install is complete,open it
+ 
+ ``` $ roslaunch robot_arm_pkg check_motors.launch ```
+ 
+![Screenshot from 2021-07-04 04-01-13](https://user-images.githubusercontent.com/85907057/124371265-bed19000-dc88-11eb-9a0d-91a4bb43ee5e.png)
+ 
  --------------------------------
- ## Install arduino ID within a system ubuntu
+ ## Is Installed arduino  
  
 ### install rossrial by using code
 ```
@@ -72,18 +65,18 @@ installed catkin
  $ source devel/setup.bash
  $ rosrun robot_arm_pkg joint_states_to_gazebo.py
 ```
+![Screenshot from 2021-07-04 05-19-42](https://user-images.githubusercontent.com/85907057/124371316-3f908c00-dc89-11eb-8089-8b0185fd3339.png)
+
+
 --------------------------------
-### running package moveit
+### running gazebo and RViz in moveit
+
  ```$roslaunch moveit_pkg demo.launch```
-### running with Arduino
-- in terminal
 
- ```$ roslaunch moveit_pkg demo.launch```
- 
-- in other terminal
 
- ```$ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200```
+![Screenshot from 2021-07-04 05-42-37](https://user-images.githubusercontent.com/85907057/124371656-a6fc0b00-dc8c-11eb-9519-5c76c9e7724e.png)
 
+![Screenshot from 2021-07-04 06-05-11](https://user-images.githubusercontent.com/85907057/124371816-250ce180-dc8e-11eb-9712-bbdbda4b0aaf.png)
 
 
   
