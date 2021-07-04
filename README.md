@@ -1,6 +1,6 @@
-# install-arm-package..
+# install_robot_arm_package..
 
-To install the arm package, go to src and install git, then install the arm package
+Add the robot_arm package to "src", install git, then install the package.
 
 ```
  $ cd ~/catkin_ws/src
@@ -19,7 +19,7 @@ To install the arm package, go to src and install git, then install the arm pack
 ### To compile packages
  ```$ catkin_make```
  
- After the install is complete,open it
+ open The package..
  
  ``` $ roslaunch robot_arm_pkg check_motors.launch ```
  
@@ -54,7 +54,7 @@ To install the arm package, go to src and install git, then install the arm pack
  $ source devel/setup.bash
  $ roslaunch robot_arm_pkg check_motors_gazebo.launch
 ```
-- in other terminal.change the permission
+- in other terminal, change permission
 ```
  $ cd catkin_ws/src/arduino_robot_arm/robot_arm_pkg/scripts
  $ sudo chmod +x joint_states_to_gazeo_py
@@ -76,7 +76,6 @@ To install the arm package, go to src and install git, then install the arm pack
 
 ![Screenshot from 2021-07-04 05-42-37](https://user-images.githubusercontent.com/85907057/124371656-a6fc0b00-dc8c-11eb-9519-5c76c9e7724e.png)
 
-![Screenshot from 2021-07-04 06-05-11](https://user-images.githubusercontent.com/85907057/124371816-250ce180-dc8e-11eb-9712-bbdbda4b0aaf.png)
 
 
   
